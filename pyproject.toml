@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-sim"
+version = "0.1.0"
+description = "Multi-agent sandbox for measuring emergent behavior in LLM agent populations"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "networkx>=3.0"]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+agent-sim = "agent_sim.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_sim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
