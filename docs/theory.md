@@ -50,3 +50,13 @@ Closed forms: `agent_sim.theory` (checked by `tests/test_baselines.py`).
 - Bikhchandani, Hirshleifer, Welch (1992). Informational cascades. *JPE* 100(5).
 - Calvano et al. (2020). AI, algorithmic pricing, and collusion. *AER* 110(10).
 - Monderer, Shapley (1996). Potential games. *GEB* 14(1).
+
+## Quickstart Examples
+
+```bash
+# Public goods simulation on small-world topology
+agent-sim run public_goods --agents 8 --topology small_world --steps 50
+
+# Informational cascade experiment with binary signals
+agent-sim run cascade --agents 12 --steps 100 --seed 42
+```
