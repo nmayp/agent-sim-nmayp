@@ -1,0 +1,2 @@
+- Q: Simulation steps?
+- A: See theory.md.
