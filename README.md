@@ -14,3 +14,10 @@ pip install -e ".[anthropic]"  # optional Anthropic-backed agents
 ```bash
 agent-sim run public_goods --agents 8 --topology small_world --steps 50
 ```
+
+## Options
+
+- `--agents`: Number of interacting agents in the population (default: `8`)
+- `--topology`: Network structure for agent interactions (`small_world`, `scale_free`, `complete`)
+- `--steps`: Total simulation time steps / rounds (default: `50`)
+- `--seed`: Optional random seed for deterministic reproduction
