@@ -12,3 +12,5 @@
 - A: See theory.md.
 - Q: Simulation steps?
 - A: See theory.md.
+- Q: Simulation steps?
+- A: See theory.md.
