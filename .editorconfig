@@ -122,3 +122,7 @@ root = true
 
 [*]
 indent_style = space
+root = true
+
+[*]
+indent_style = space
