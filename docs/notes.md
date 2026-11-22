@@ -66,3 +66,4 @@
 - Documentation update.
 - Documentation update.
 - Documentation update.
+- Cleaned up formatting.
